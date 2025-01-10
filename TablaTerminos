@@ -1,0 +1,139 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyM9IKb6d0BcSHnugKgLQjRI",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/GibranLira/miweb1/blob/main/TablaTerminos\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from google.colab import data_table\n",
+        "import pandas as pd\n",
+        "\n",
+        "# Crear los datos en formato de diccionario\n",
+        "data = {\n",
+        "    'TERMINO': ['Estadística', 'Datos', 'Teoría de conjuntos', 'Axiomas', 'Eventos'],\n",
+        "    '¿Qué es?': ['Estudio y análisis de datos para tomar decisiones o hacer predicciones',\n",
+        "                 'Información recogida para su análisis',\n",
+        "                 'Rama de las matemáticas que estudia colecciones de elementos',\n",
+        "                 'Reglas o principios básicos aceptados sin necesidad de demostración',\n",
+        "                 'Resultados posibles de un experimento aleatorio'],\n",
+        "    '¿Qué deseo saber?': ['Cómo analizar y sacar conclusiones de datos',\n",
+        "                           'Cómo recoger y organizar información relevante',\n",
+        "                           'Cómo agrupar y relacionar elementos de manera lógica',\n",
+        "                           'Principios fundamentales que guían el razonamiento matemático',\n",
+        "                           'Cómo identificar y calcular la probabilidad de diferentes resultados']\n",
+        "}\n",
+        "\n",
+        "# Crear un DataFrame con pandas\n",
+        "df = pd.DataFrame(data)\n",
+        "\n",
+        "# Mostrar la tabla interactiva\n",
+        "data_table.DataTable(df)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 225
+        },
+        "id": "k__N-9fdnESV",
+        "outputId": "68008865-1deb-4047-8c7e-7d1ef7fe87bf"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/html": [
+              "<div>\n",
+              "<style scoped>\n",
+              "    .dataframe tbody tr th:only-of-type {\n",
+              "        vertical-align: middle;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe tbody tr th {\n",
+              "        vertical-align: top;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe thead th {\n",
+              "        text-align: right;\n",
+              "    }\n",
+              "</style>\n",
+              "<table border=\"1\" class=\"dataframe\">\n",
+              "  <thead>\n",
+              "    <tr style=\"text-align: right;\">\n",
+              "      <th></th>\n",
+              "      <th>TERMINO</th>\n",
+              "      <th>¿Qué es?</th>\n",
+              "      <th>¿Qué deseo saber?</th>\n",
+              "    </tr>\n",
+              "  </thead>\n",
+              "  <tbody>\n",
+              "    <tr>\n",
+              "      <th>0</th>\n",
+              "      <td>Estadística</td>\n",
+              "      <td>Estudio y análisis de datos para tomar decisio...</td>\n",
+              "      <td>Cómo analizar y sacar conclusiones de datos</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>1</th>\n",
+              "      <td>Datos</td>\n",
+              "      <td>Información recogida para su análisis</td>\n",
+              "      <td>Cómo recoger y organizar información relevante</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>2</th>\n",
+              "      <td>Teoría de conjuntos</td>\n",
+              "      <td>Rama de las matemáticas que estudia coleccione...</td>\n",
+              "      <td>Cómo agrupar y relacionar elementos de manera ...</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>3</th>\n",
+              "      <td>Axiomas</td>\n",
+              "      <td>Reglas o principios básicos aceptados sin nece...</td>\n",
+              "      <td>Principios fundamentales que guían el razonami...</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>4</th>\n",
+              "      <td>Eventos</td>\n",
+              "      <td>Resultados posibles de un experimento aleatorio</td>\n",
+              "      <td>Cómo identificar y calcular la probabilidad de...</td>\n",
+              "    </tr>\n",
+              "  </tbody>\n",
+              "</table>\n",
+              "</div>"
+            ],
+            "application/vnd.google.colaboratory.module+javascript": "\n      import \"https://ssl.gstatic.com/colaboratory/data_table/e523c247d1e24a05/data_table.js\";\n\n      const table = window.createDataTable({\n        data: [[{\n            'v': 0,\n            'f': \"0\",\n        },\n\"Estad\\u00edstica\",\n\"Estudio y an\\u00e1lisis de datos para tomar decisiones o hacer predicciones\",\n\"C\\u00f3mo analizar y sacar conclusiones de datos\"],\n [{\n            'v': 1,\n            'f': \"1\",\n        },\n\"Datos\",\n\"Informaci\\u00f3n recogida para su an\\u00e1lisis\",\n\"C\\u00f3mo recoger y organizar informaci\\u00f3n relevante\"],\n [{\n            'v': 2,\n            'f': \"2\",\n        },\n\"Teor\\u00eda de conjuntos\",\n\"Rama de las matem\\u00e1ticas que estudia colecciones de elementos\",\n\"C\\u00f3mo agrupar y relacionar elementos de manera l\\u00f3gica\"],\n [{\n            'v': 3,\n            'f': \"3\",\n        },\n\"Axiomas\",\n\"Reglas o principios b\\u00e1sicos aceptados sin necesidad de demostraci\\u00f3n\",\n\"Principios fundamentales que gu\\u00edan el razonamiento matem\\u00e1tico\"],\n [{\n            'v': 4,\n            'f': \"4\",\n        },\n\"Eventos\",\n\"Resultados posibles de un experimento aleatorio\",\n\"C\\u00f3mo identificar y calcular la probabilidad de diferentes resultados\"]],\n        columns: [[\"number\", \"index\"], [\"string\", \"TERMINO\"], [\"string\", \"\\u00bfQu\\u00e9 es?\"], [\"string\", \"\\u00bfQu\\u00e9 deseo saber?\"]],\n        columnOptions: [{\"width\": \"1px\", \"className\": \"index_column\"}],\n        rowsPerPage: 25,\n        helpUrl: \"https://colab.research.google.com/notebooks/data_table.ipynb\",\n        suppressOutputScrolling: true,\n        minimumWidth: undefined,\n      });\n\n      function appendQuickchartButton(parentElement) {\n        let quickchartButtonContainerElement = document.createElement('div');\n        quickchartButtonContainerElement.innerHTML = `\n<div id=\"df-e7c8765d-5c3d-4c4d-b11b-556b62f64202\">\n  <button class=\"colab-df-quickchart\" onclick=\"quickchart('df-e7c8765d-5c3d-4c4d-b11b-556b62f64202')\"\n            title=\"Suggest charts\"\n            style=\"display:none;\">\n    \n<svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24px\"viewBox=\"0 0 24 24\"\n     width=\"24px\">\n    <g>\n        <path d=\"M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z\"/>\n    </g>\n</svg>\n  </button>\n  \n<style>\n  .colab-df-quickchart {\n      --bg-color: #E8F0FE;\n      --fill-color: #1967D2;\n      --hover-bg-color: #E2EBFA;\n      --hover-fill-color: #174EA6;\n      --disabled-fill-color: #AAA;\n      --disabled-bg-color: #DDD;\n  }\n\n  [theme=dark] .colab-df-quickchart {\n      --bg-color: #3B4455;\n      --fill-color: #D2E3FC;\n      --hover-bg-color: #434B5C;\n      --hover-fill-color: #FFFFFF;\n      --disabled-bg-color: #3B4455;\n      --disabled-fill-color: #666;\n  }\n\n  .colab-df-quickchart {\n    background-color: var(--bg-color);\n    border: none;\n    border-radius: 50%;\n    cursor: pointer;\n    display: none;\n    fill: var(--fill-color);\n    height: 32px;\n    padding: 0;\n    width: 32px;\n  }\n\n  .colab-df-quickchart:hover {\n    background-color: var(--hover-bg-color);\n    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);\n    fill: var(--button-hover-fill-color);\n  }\n\n  .colab-df-quickchart-complete:disabled,\n  .colab-df-quickchart-complete:disabled:hover {\n    background-color: var(--disabled-bg-color);\n    fill: var(--disabled-fill-color);\n    box-shadow: none;\n  }\n\n  .colab-df-spinner {\n    border: 2px solid var(--fill-color);\n    border-color: transparent;\n    border-bottom-color: var(--fill-color);\n    animation:\n      spin 1s steps(1) infinite;\n  }\n\n  @keyframes spin {\n    0% {\n      border-color: transparent;\n      border-bottom-color: var(--fill-color);\n      border-left-color: var(--fill-color);\n    }\n    20% {\n      border-color: transparent;\n      border-left-color: var(--fill-color);\n      border-top-color: var(--fill-color);\n    }\n    30% {\n      border-color: transparent;\n      border-left-color: var(--fill-color);\n      border-top-color: var(--fill-color);\n      border-right-color: var(--fill-color);\n    }\n    40% {\n      border-color: transparent;\n      border-right-color: var(--fill-color);\n      border-top-color: var(--fill-color);\n    }\n    60% {\n      border-color: transparent;\n      border-right-color: var(--fill-color);\n    }\n    80% {\n      border-color: transparent;\n      border-right-color: var(--fill-color);\n      border-bottom-color: var(--fill-color);\n    }\n    90% {\n      border-color: transparent;\n      border-bottom-color: var(--fill-color);\n    }\n  }\n</style>\n\n  <script>\n    async function quickchart(key) {\n      const quickchartButtonEl =\n        document.querySelector('#' + key + ' button');\n      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.\n      quickchartButtonEl.classList.add('colab-df-spinner');\n      try {\n        const charts = await google.colab.kernel.invokeFunction(\n            'suggestCharts', [key], {});\n      } catch (error) {\n        console.error('Error during call to suggestCharts:', error);\n      }\n      quickchartButtonEl.classList.remove('colab-df-spinner');\n      quickchartButtonEl.classList.add('colab-df-quickchart-complete');\n    }\n    (() => {\n      let quickchartButtonEl =\n        document.querySelector('#df-e7c8765d-5c3d-4c4d-b11b-556b62f64202 button');\n      quickchartButtonEl.style.display =\n        google.colab.kernel.accessAllowed ? 'block' : 'none';\n    })();\n  </script>\n</div>`;\n        parentElement.appendChild(quickchartButtonContainerElement);\n      }\n\n      appendQuickchartButton(table);\n    ",
+            "text/plain": [
+              "<google.colab.data_table.DataTable object>"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 4
+        }
+      ]
+    }
+  ]
+}
